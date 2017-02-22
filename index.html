@@ -15,6 +15,16 @@
 
         body {
             font-size: 16px;
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrapper {
+            display: flex;
+            align-items: center;
+            vertical-align: center;
+            width: 100%;
+            height: 100%;
         }
 
         h1 {
@@ -22,6 +32,7 @@
             font-size: 5em;
             margin: 0 auto;
             text-align: center;
+            display: inline-block;
         }
 
         #dinosaurghost-container {
@@ -42,10 +53,12 @@
 </head>
 <body>
 
-<h1>Why isn't there a movie about dinosaur ghosts?!</h1>
-<div id="dinosaurghost-container">
-    <object type="image/svg+xml" data="images/dinosaurghost.svg" id="dinosaurghost">Your browser does not support SVGs</object>
-</div>
+    <div id="wrapper">
+        <h1>Why isn't there a movie about dinosaur ghosts?!</h1>
+        <div id="dinosaurghost-container">
+            <object type="image/svg+xml" data="images/dinosaurghost.svg" id="dinosaurghost">Your browser does not support SVGs</object>
+        </div>
+    </div>
 
 </body>
 </html>
